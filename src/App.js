@@ -1,20 +1,19 @@
 import "./App.css";
-import "./components/header.css";
-import "./components/menu/menu.css";
-import "./components/Main/main.css";
-import "./components/test/test.css";
+import "./css/header.css";
+import "./css/menu.css";
+import "./css/test.css";
 import Header from "./components/header/Hader.jsx";
 import Menu from "./components/menu/Menu.jsx";
 import Main from "./components/Main/main.jsx";
-import Test from "./components/test/test.jsx";
-
+import Recomended from "./components/Cards/Recomended";
 function App() {
   return (
     <>
-      <Test />
       <Header />
       <Menu />
       <Main />
+      <Recomended/>
+      
     </>
   );
 }
