@@ -1,4 +1,8 @@
+import Recomended from "../Cards/Recomended"
+
 function Main(props) {
-  return <></>;
+  return <>
+  <Recomended/>
+  </>;
 }
 export default Main;

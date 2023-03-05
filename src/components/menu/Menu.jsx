@@ -15,7 +15,7 @@ import user from "../../images/Oval.png";
 import ListCategory from "./listCategory/ListCategory"
 import ChannelCategory from "./channelCategory/ChannelCategory"
 
-function Menu(props) {
+function Menu() {
   return (
     <>
       <div className="container p-8 w-52 fixed bg-zinc-100">
