@@ -9,7 +9,7 @@ import parsent from "../../images/Userpic.png";
 function Header(props) {
   return (
     <>
-      <header className="header snap-center">
+      <header className="header snap-center w-full fixed bg-zinc-100">
         <div className="container  p-8">
           <div className="wrapper hero flex items-center">
             <div className="left flex gap-6 snap-center">

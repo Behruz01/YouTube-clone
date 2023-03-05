@@ -4,7 +4,7 @@ import VideoCard from "./videoCard/VideoCard.jsx"
 
 const Recomended = ()=>{
     return(
-        <div className="video bg-zinc-100  w-full mt-16  px-5 pt-2 pb-28 overflow-auto">
+        <div className="video pt-5 pl- 8 bg-zinc-100  w-full mt-16  px-5 pt-2 pb-28 overflow-auto">
             <h1 className="fond-bold mb-4">Recommended</h1>
             <div className="videos__content flex justify-around flex-row flex-wrap gap-2">
             <VideoCard
@@ -94,4 +94,5 @@ const Recomended = ()=>{
         </div>
     )
 }
+
 export default Recomended

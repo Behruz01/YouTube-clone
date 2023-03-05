@@ -10,9 +10,10 @@ function App() {
   return (
     <>
       <Header />
+      <div className="flex ">
       <Menu />
       <Main />
-      <Recomended/>
+      <Recomended/></div>
       
     </>
   );

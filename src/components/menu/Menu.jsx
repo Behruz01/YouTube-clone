@@ -10,90 +10,46 @@ import music from "../../images/Combined-Shape.png";
 import game from "../../images/tech-02.png";
 import more from "../../images/chevron-down.png";
 import user from "../../images/Oval.png";
-import settings from "../../images/Combined-Shape (1).png";
+// import settings from "../../images/Combined-Shape (1).png";
+
+import ListCategory from "./listCategory/ListCategory"
+import ChannelCategory from "./channelCategory/ChannelCategory"
 
 function Menu(props) {
   return (
     <>
-      <div className="container p-8  ">
+      <div className="container p-8 w-52 fixed bg-zinc-100">
         <div className="wrapper">
-          <ul className="item ">
-            <li className="list flex align-center gap-2">
-              <img className="menuIcon" src={home} alt="icon" />
-              <p className="text-red-700">Home</p>
-            </li>
-            <li className="list flex align-center gap-2">
-              <img className="menuIcon" src={tranding} alt="icon" />
-              <p className="text-gray-400">Trending</p>
-            </li>
-            <li className="list flex align-center gap-2">
-              <img className="menuIcon" src={combined} alt="icon" />
-              <p className="text-gray-400">Subscriptions</p>
-            </li>
-          </ul>
+        <div className="sidebar__categories mb-3">
+				<ListCategory icon={home} name={"Home"} />
+				<ListCategory icon={tranding} name={"Trending"} />
+				<ListCategory icon={combined} name={"Subscriptions"} />
+			</div>
 
-          <ul className="item mt-14  ">
-            <li className="list flex align-center gap-2">
-              <img className="menuIcon" src={libery} alt="icon" />
-              <p className="text-gray-400">Libery</p>
-            </li>
-            <li className="list flex align-center gap-2">
-              <img className="menuIcon" src={others} alt="icon" />
-              <p className="text-gray-400">History</p>
-            </li>
-            <li className="list flex align-center gap-2">
-              <img className="menuIcon" src={tech} alt="icon" />
-              <p className="text-gray-400">Watch laterr</p>
-            </li>
-            <li className="list flex align-center gap-2">
-              <img className="menuIcon" src={start} alt="icon" />
-              <p className="text-gray-400">Favourites</p>
-            </li>
-            <li className="list flex align-center gap-2">
-              <img className="menuIcon" src={like} alt="icon" />
-              <p className="text-gray-400">Liked videos</p>
-            </li>
-            <li className="list flex align-center gap-2">
-              <img className="menuIcon" src={music} alt="icon" />
-              <p className="text-gray-400">Music</p>
-            </li>
-            <li className="list flex align-center gap-2">
-              <img className="menuIcon" src={game} alt="icon" />
-              <p className="text-gray-400">Games</p>
-            </li>
+      <hr className="h-0.5 bg-zinc-400" />
 
-            <li className="list flex  gap-2">
-              <img className="miniIcon" src={more} alt="icon" />
-              <p className="text-gray-400">Show more</p>
-            </li>
-          </ul>
-          <h3 className="mt-9 font-bold ">Subscriptions</h3>
-          <ul className="follow item mt-9">
-            <li className="folli flex gap-2">
-              <img src={user} alt="" />
-              <p className="text-gray-400">Gussie Singleton</p>
-            </li>{" "}
-            <li className="folli flex gap-2">
-              <img src={user} alt="" />
-              <p className="text-gray-400">Nora Francis</p>
-            </li>{" "}
-            <li className="folli flex gap-2">
-              <img src={user} alt="" />
-              <p className="text-gray-400">Belle Briggs</p>
-            </li>{" "}
-            <li className="folli flex gap-2">
-              <img src={user} alt="" />
-              <p className="text-gray-400">Eunice Cortez</p>
-            </li>{" "}
-            <li className="folli flex gap-2">
-              <img src={user} alt="" />
-              <p className="text-gray-400">Emma Hanson</p>
-            </li>
-            <li className="list folli flex gap-2 mt-24">
-              <img src={settings} alt="" />
-              <p className="text-gray-300 ">Setting</p>
-            </li>
-          </ul>
+
+      <div className="sidebar__categories mt-3 mb-3 ">
+				<ListCategory icon={libery} name={"Library"} />
+				<ListCategory icon={others} name={"History"} />
+				<ListCategory icon={tech} name={"Watch later"} />
+				<ListCategory icon={start} name={"Favourites"} />
+				<ListCategory icon={like} name={"Liked videos"} />
+				<ListCategory icon={music} name={"Music"} />
+				<ListCategory icon={game} name={"Games"} />
+				<ListCategory icon={more} name={"Show more"} />
+			</div>
+
+			<hr className="h-0.5 bg-zinc-400" />
+
+          <div className="sidebar__categories mt-8">
+				<h4 className="pl-4 mb-3 font-bold">Subscriptions</h4>
+
+				<ChannelCategory avatar={user} name={"Gussie Singleton"} />
+				<ChannelCategory avatar={user} name={"Nora Francis"} />
+				<ChannelCategory avatar={user} name={"Belle Briggs"} />
+				<ChannelCategory avatar={user} name={"Gussie Singleton"} />
+			</div>
         </div>
       </div>
     </>
