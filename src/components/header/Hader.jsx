@@ -9,10 +9,10 @@ import parsent from "../../images/Userpic.png";
 function Header(props) {
   return (
     <>
-      <header className="header snap-center w-full fixed bg-zinc-100">
+      <header className="header items-center w-full fixed bg-zinc-100 ">
         <div className="container  p-8">
           <div className="wrapper hero flex items-center">
-            <div className="left flex gap-6 snap-center">
+            <div className="left flex gap-6 items-center">
               <img className="menu w-5" src={menyu} alt="3" />
               <img className="w-32" src={youtube} alt="3" />
               <span className="search flex items-center">

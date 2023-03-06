@@ -18,7 +18,7 @@ import ChannelCategory from "./channelCategory/ChannelCategory"
 function Menu() {
   return (
     <>
-      <div className="container p-8 w-52 fixed bg-zinc-100">
+      <div className="container p-8 sidebar w-52 fixed bg-zinc-100 overflow-y-scroll ">
         <div className="wrapper">
         <div className="sidebar__categories mb-3">
 				<ListCategory icon={home} name={"Home"} />

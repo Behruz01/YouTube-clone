@@ -7,3 +7,8 @@
 .list {
   align-items: center;
 }
+
+.sidebar{
+margin-top: 80px;
+height: 100%;
+}
